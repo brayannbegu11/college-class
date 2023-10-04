@@ -1,0 +1,12 @@
+<main>
+    <h1>Super Pokemon</h1>
+    <div class="container">
+        {{#each superPokemons}}
+        <div class="pokemon">
+            <img src={{this.image}} />
+            <p>Name: {{this.name}}</p>
+            <p>Attack: {{this.attack}}</p>
+        </div>
+        {{/each}}
+    </div>
+</main>

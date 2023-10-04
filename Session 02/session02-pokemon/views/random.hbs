@@ -1,0 +1,24 @@
+<main>
+    <h1>Random Pokemon</h1>
+
+    <div
+        style="padding:20px 10px; border:1px solid #ccc; border-radius:5px; display:flex; justify-content:space-between;">
+        <img src={{selectedPokemon.image}} />
+        <div>
+            <p>Name:{{selectedPokemon.name}}</p>
+            <p>Attack: {{selectedPokemon.attack}}</p>
+        </div>
+    </div>
+    <a href="/random" style="border:1px solid #05c46b; 
+                                background-color:#05c46b;
+                                display:inline-block;
+                                padding:12px 20px;
+                                cursor:pointer;
+                                color:white;
+                                font-weight:bold;
+                                text-transform:uppercase;
+                                margin:20px 0px;
+                                ">
+        Choose another
+    </a>
+</main>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Please provide your feedback</h1>
+
+    <!-- use enctype="multipart/form-data" to allow the form to send file to server -->
+    <form method="post" action="/send-feedback" enctype="multipart/form-data">
+
+      <label for="customerName">Your Name</label>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        name="customerName"
+        id=""
+      />
+
+      <label for="customerMessage">Your Message</label>
+      <textarea name="customerMessage" id="" cols="30" rows="10"></textarea>
+
+      <label for="discoveryMethod">How did you hear about us</label>
+      <select name="discoveryMethod" id="">
+        <option value="email">Email</option>
+        <option value="friend">Through a Friend</option>
+        <option value="google">Google</option>
+      </select>
+
+      <label for="photo">Upload your picture </label>
+      <input type="file" name="photo">
+
+      <button type="submit">Send Feedback</button>
+    </form>
+  </body>
+</html>

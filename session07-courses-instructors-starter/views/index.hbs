@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>   
+    <main>
+        <h1>Course Catalogue</h1>
+       
+        {{!-- course catalogue form --}}
+        <a href="/catalogue">Click for Course Catalogue</a>
+        
+
+        {{!-- lookup an instructor --}}
+        <h1>Instructor Lookup</h1>
+        <form action="/lookup" method="POST">
+            <input type="text" placeholder="Enter instructor first name" name="instructorName"/>
+            <button>Submit</button>
+        </form>
+
+        {{!-- assign instructor to a course --}}
+         <h1>Assign Instructor to Course</h1>
+         <form action="/enroll" method="POST">
+            <input type="text" placeholder="Enter instructor username" name="instructorName"/>
+            <input type="text" placeholder="Enter course code" name="courseCode"/>
+            <button>Submit</button>
+         </form>
+    </main>
+</body>
+</html>

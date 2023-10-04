@@ -1,0 +1,15 @@
+<main>
+    <h1>All songs</h1>
+    {{#each music}}
+    <div class="song">
+        <img src={{this.artistImage}} />
+        <div class="song-description">
+            <p>Song title: {{this.title}}</p>
+            <p>Artist: {{this.artist}}</p>
+        </div>
+        <form action="/add/{{this.id}}" method="post">
+            <button class="add-btn" type="submit">Add to playlist</button>
+        </form>
+    </div>
+    {{/each}}
+</main>

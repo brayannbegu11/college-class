@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Please provide your feedback</h1>
+    <form action="/send-feedback" method="post" enctype="multipart/form-data">
+        <label for="customerName">Your Name :</label>
+        <input type="text" name="customerName" placeholder="Enter your name" id="customerName">
+
+        <br>
+
+        <label for="customerMessage">Your Message :</label>
+        <textarea type="text" name="customerMessage" cols="30" rows="10"></textarea>
+
+        <br>
+
+        <label for="discoveryMethod">How did you hear about us</label>
+        <select name="discoveryMethod">
+            <option value="email">email</option>
+            <option value="friend">through a friend</option>
+            <option value="google">Google</option>
+        </select>
+
+        <label for="photo">Upload your picture</label>
+        <input type="file" name="photo">
+        <button type="submit">Send feedback</button>
+
+    </form>
+</body>
+
+</html>

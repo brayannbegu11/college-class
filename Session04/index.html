@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form continues</title>
+</head>
+<body>
+    <h1>Processing form data on server side</h1>
+
+    <form action="/select/fr" method="get">
+
+        <label for="language">Select language : </label>
+        <select name="language">
+            <option value="fr">French</option>
+            <option value="en">English</option>
+            <option value="sp">Spanish</option>
+        </select>
+
+        <button type="submit">Send Data </button>
+
+    </form>
+
+    <h1>Student Information</h1>
+    <form action="/course/mads4007" method="post">
+        <label for="studentName"> Enter the name to be added to MADS4007</label>
+        <input type="text" name="studentName" placeholder="Enter student name">
+        <button type="submit"> Add Student to MADS4007</button>
+    </form>
+
+    <form action="/course/mads4012" method="post">
+        <label for="studentName"> Enter the name to be added to MADS4012</label>
+        <input type="text" name="studentName" placeholder="Enter student name">
+        <button type="submit"> Add Student to MADS4012</button>
+    </form>
+
+    <a href="/class-roster">Visit Class Roster</a>
+
+
+</body>
+</html>

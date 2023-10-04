@@ -1,0 +1,11 @@
+<main>
+    <h1>My Playlist</h1>
+    {{#each playlist}}
+    <div class="song-playlist">
+        <p>Song title: {{this.title}}</p>
+        <form action="/remove/{{this.id}}" method="post">
+            <button class="rm-btn" type="submit">Remove</button>
+        </form>
+    </div>
+    {{/each}}
+</main>

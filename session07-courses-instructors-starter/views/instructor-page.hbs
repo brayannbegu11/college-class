@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Instructors</h1>
+    {{!-- TODO: list of courses goes here --}}
+    {{#each instructors}}
+    <p>Name: {{this.name}}</p>
+    <p>Email: {{this.email}}</p>
+    {{#each this.coursesTaught}}
+    <p>Course Code: {{this.code}}</p>
+    <p>Course Title: {{this.title}}</p>
+    {{/each}}
+    <hr>
+    {{/each}}
+    <a href="/">Go back</a>
+</body>
+
+</html>

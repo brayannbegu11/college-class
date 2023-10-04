@@ -1,0 +1,13 @@
+<main>
+    <h1>All Pokemon</h1>
+    <div class="container">
+        {{#each pokemonList}}
+        <div class="pokemon">
+            <img src={{this.image}} />
+            <p>Name:{{this.name}}</p>
+            <p>Attack: {{this.attack}}</p>
+        </div>
+        {{/each}}
+
+    </div>
+</main>
