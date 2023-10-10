@@ -1,0 +1,10 @@
+[{ 
+ "name": "Peter Smith",
+ "cardNumber": "1001001",
+ "phoneNumber": "415-555-1234",
+},
+{ 
+ "name": "Amy Wong",
+ "cardNumber": "1001002",
+ "phoneNumber": "602-888-0000",
+}]
